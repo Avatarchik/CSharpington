@@ -4,12 +4,14 @@ using UnityEngine;
 
 namespace Lasm.CSharpington {
     public abstract class ClassExportScript : ExportScript
-    { 
-        public abstract string Reference();
-        public abstract string Class();
-        public abstract string Fields();
-        public abstract string Properties();
-        public abstract string Constructors();
-        public abstract string Methods();
+    {
+        public virtual string References() { return string.Empty; }
+        public virtual string Class() { return string.Empty; }
+        public virtual string Fields() { return string.Empty; }
+        public virtual string Properties() { return string.Empty; }
+        public virtual string Constructors() { return string.Empty; }
+        public virtual string Methods() { return string.Empty; }
+        public virtual string Events() { return string.Empty; }
+        public virtual string Indexers() { return string.Empty; }
     }
 }
