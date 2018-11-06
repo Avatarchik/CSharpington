@@ -26,9 +26,11 @@ namespace Lasm.CSharpington
                     }
                 }
 
+#if UNITY_EDITOR
                 AssetDatabase.Refresh();
+#endif
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Debug.LogError("Exception: " + e);
             }
